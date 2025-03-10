@@ -1,0 +1,148 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Định dạng chung */
+body {
+  display: flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 22, 22, 0.4);
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  border-top: 1px solid #ccc;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: #e2e2e2;
+}
+
+/* Nội dung chính */
+#main-doc {
+  margin-left: 310px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+#main-doc header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+.main-section {
+  margin-bottom: 20px;
+}
+
+.main-section article {
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+/* Code block */
+code {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* List */
+section li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+/* Kiểu mặc định cho màn hình lớn */
+#navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  border-right: solid 1px rgba(0, 22, 22, 0.4);
+  background-color: #f4f4f4;
+}
+
+#main-doc {
+  margin-left: 320px;
+  padding: 20px;
+}
+
+/* Media Query: Khi màn hình nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: solid 1px rgba(0, 22, 22, 0.4);
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    overflow: visible;
+  }
+
+  #navbar li {
+    margin: 5px;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
