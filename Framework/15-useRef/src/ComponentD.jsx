@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { UserContext } from "./ComponentA.jsx";
+import { UserContext } from "./ComponentA.js";
 
 function ComponentD() {
   const user = useContext(UserContext);

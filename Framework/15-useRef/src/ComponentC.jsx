@@ -1,6 +1,6 @@
-import ComponentD from "./ComponentD.jsx";
+import ComponentD from "./ComponentD.js";
 import React, { useContext } from "react";
-import { UserContext } from "./ComponentA.jsx";
+import { UserContext } from "./ComponentA.js";
 
 function ComponentC() {
   const user = useContext(UserContext);
